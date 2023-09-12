@@ -1,0 +1,847 @@
+/* Navbar inicia */
+.nav-bar {
+  background-color: rgb(19, 17, 17);
+}
+
+.navbar-brand {
+  margin-left: 50px;
+  font-family: "GT America Extended Regular";
+  font-size: 25px;
+}
+
+.nav-link {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(68, 68, 68, 0.2666666667);
+  padding: 5px 10px;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 11px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link::after {
+  content: "";
+  background: #444;
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.nav-link:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+/* Navbar Termina */
+/* Pagina principal */
+.button-container {
+  background-image: url(images/imagen1.webp);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  filter: brightness(0.5);
+}
+
+.estudio,
+.odontologico,
+.home-texto {
+  color: #fff;
+  font-family: "GT America Extended Regular";
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+.estudio {
+  font-size: 80px;
+  position: absolute;
+  margin-left: 450px;
+  bottom: 500px;
+}
+
+.odontologico {
+  font-size: 80px;
+  position: absolute;
+  margin-left: 270px;
+  bottom: 30px;
+}
+
+.home-texto {
+  font-size: 13px;
+  position: absolute;
+  margin-left: 10%;
+  bottom: 30%;
+}
+
+/* Pagina principal */
+/* Pagina principal Responsive*/
+@media (max-width: 480px) {
+  .estudio,
+  .odontologico,
+  .home-texto {
+    letter-spacing: 2px;
+  }
+  .estudio {
+    font-size: 16px;
+  }
+  .odontologico {
+    font-size: 16px;
+  }
+  .home-texto {
+    font-size: 6px;
+  }
+}
+@media (max-width: 768px) {
+  .estudio,
+  .odontologico,
+  .home-texto {
+    letter-spacing: 3px;
+  }
+  .estudio {
+    font-size: 40px;
+    margin-left: 200px;
+    bottom: 400px;
+  }
+  .odontologico {
+    font-size: 40px;
+    margin-left: 120px;
+    bottom: 100px;
+  }
+  .home-texto {
+    font-size: 10px;
+    text-align: center;
+    bottom: 200px;
+  }
+}
+/* Pagina principal Responsive*/
+/* Footer */
+.footerP {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.redes {
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+
+body {
+  background-color: black;
+}
+
+/* Footer */
+/* Pagina de Inicio */
+.inicio-imagen {
+  background-image: url(images/prism.png);
+  background-size: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.titulo-inicio1 {
+  font-family: "RoslindaleDispCond Regular";
+  text-align: center;
+  color: #ccc;
+  text-shadow: 2px 1px 2px black;
+  font-size: 40px;
+}
+
+.p-inicio1 {
+  font-size: 30px;
+  color: #ccc;
+  font-family: "RoslindaleDispCond Regular";
+}
+
+.p-inicio2 {
+  font-size: 30px;
+  color: #ccc;
+  font-family: "RoslindaleDispCond Regular";
+}
+
+.p-inicio3 {
+  font-size: 30px;
+  color: #ccc;
+  font-family: "RoslindaleDispCond Regular";
+}
+
+.titulo-inicio2 {
+  font-family: "RoslindaleDispCond Regular";
+  text-align: center;
+  color: #ccc;
+  text-shadow: 2px 1px 2px black;
+  font-size: 40px;
+}
+
+.titulo-inicio3 {
+  font-family: "RoslindaleDispCond Regular";
+  text-align: center;
+  color: #ccc;
+  text-shadow: 2px 1px 2px black;
+  font-size: 40px;
+}
+
+.titulo-inicio1,
+.titulo-inicio2,
+.titulo-inicio3,
+.p-inicio1,
+.p-inicio2,
+.p-inicio3 {
+  margin: 20px;
+}
+
+/* Pagina de Inicio Termina */
+/* Servicios */
+.col1-lg-12 {
+  background-image: url(images/cirugia.jpeg);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  filter: grayscale(0.5);
+}
+
+.col2-lg-12 {
+  background-image: url(images/protesis.webp);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  filter: grayscale(0.5);
+}
+
+.col3-lg-12 {
+  background-image: url(images/ENDODONCIA.webp);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  filter: grayscale(0.5);
+}
+
+.col4-lg-12 {
+  background-image: url(images/ortodoncia.webp);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  filter: grayscale(0.5);
+}
+
+.cirugia {
+  font-family: "GT America Extended Regular";
+  font-size: 70px;
+  margin-left: 280px;
+  margin-top: 60px;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 2px 1px 2px black;
+}
+
+.cirugia-texto {
+  font-size: 20px;
+  margin-top: 70px;
+  margin-left: 220px;
+  justify-content: center;
+  color: #fff;
+  font-family: "RoslindaleDispCond Regular";
+  text-shadow: 2px 1px 2px black;
+}
+
+.protesis {
+  font-family: "GT America Extended Regular";
+  font-size: 70px;
+  margin-left: 470px;
+  margin-top: 60px;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 2px 1px 2px black;
+}
+
+.protesis-texto {
+  font-size: 20px;
+  margin-top: 70px;
+  margin-left: 290px;
+  justify-content: center;
+  color: #fff;
+  font-family: "RoslindaleDispCond Regular";
+  text-shadow: 2px 1px 2px black;
+}
+
+.endodoncia-texto {
+  font-size: 20px;
+  margin-top: 70px;
+  margin-left: 220px;
+  justify-content: center;
+  color: #fff;
+  font-family: "RoslindaleDispCond Regular";
+  text-shadow: 2px 1px 2px black;
+}
+
+.endodoncia {
+  font-family: "GT America Extended Regular";
+  font-size: 70px;
+  margin-left: 180px;
+  margin-top: 60px;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 2px 1px 2px black;
+}
+
+.ortodoncia-texto {
+  font-size: 20px;
+  margin-top: 70px;
+  margin-left: 220px;
+  justify-content: center;
+  color: #fff;
+  font-family: "RoslindaleDispCond Regular";
+  text-shadow: 2px 1px 2px black;
+}
+
+.ortodoncia {
+  font-family: "GT America Extended Regular";
+  font-size: 70px;
+  margin-left: 180px;
+  margin-top: 60px;
+  justify-content: center;
+  text-shadow: 2px 1px 2px black;
+}
+
+/* Servicios */
+@media only screen and (min-width: 0) and (max-width: 576px) {
+  .navbar-collapse {
+    background-color: rgb(19, 17, 17);
+    display: flex;
+    justify-content: center !important;
+  }
+}
+/* Responsive de Servicios (TEXTO)*/
+.cirugia-texto,
+.protesis-texto,
+.endodoncia-texto,
+.ortodoncia-texto {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .cirugia-texto,
+  .protesis-texto,
+  .endodoncia-texto,
+  .ortodoncia-texto {
+    padding: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .cirugia-texto,
+  .protesis-texto,
+  .endodoncia-texto,
+  .ortodoncia-texto {
+    font-size: 0.8rem;
+  }
+  .protesis-texto,
+  .endodoncia-texto,
+  .ortodoncia-texto {
+    padding: 5px;
+  }
+}
+/* Responsive de Servicios (TEXTO)*/
+/* Responsive de Servicios*/
+.cirugia,
+.protesis,
+.endodoncia,
+.ortodoncia {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .cirugia,
+  .protesis,
+  .endodoncia,
+  .ortodoncia {
+    padding: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .cirugia,
+  .protesis,
+  .endodoncia,
+  .ortodoncia {
+    font-size: 1.5rem;
+  }
+  .protesis,
+  .endodoncia,
+  .ortodoncia {
+    padding: 5px;
+  }
+}
+/* Responsive de Servicios*/
+/* Pagina de Contacto */
+.container2 {
+  background-image: url(images/prism.png);
+  overflow: hidden;
+}
+
+.colestilo {
+  padding: 50px;
+  overflow: hidden;
+}
+
+.tel {
+  overflow: hidden;
+  font-family: "GT America Extended Regular";
+  color: #ccc;
+  text-shadow: 2px 1px 2px black;
+  font-size: 35px;
+  margin-left: 25px;
+}
+
+.tel1 {
+  overflow: hidden;
+  color: #ccc;
+  margin-left: 25px;
+}
+
+.horarios {
+  overflow: hidden;
+  font-family: "GT America Extended Regular";
+  color: #ccc;
+  text-shadow: 2px 1px 2px black;
+  font-size: 35px;
+  margin-left: 25px;
+}
+
+.hor {
+  overflow: hidden;
+  color: #ccc;
+  margin-left: 25px;
+}
+
+.direccion {
+  overflow: hidden;
+  font-family: "GT America Extended Regular";
+  color: #ccc;
+  text-shadow: 2px 1px 2px black;
+  font-size: 35px;
+  margin-left: 25px;
+}
+
+.dir {
+  overflow: hidden;
+  color: #ccc;
+  margin-left: 25px;
+}
+
+/* Pagina de Contacto */
+/* Pagina de nosotros */
+.nos {
+  background-image: url(images/prism.png);
+  background-size: 100%;
+  height: 100vh;
+}
+
+.textoK {
+  font-size: 25px;
+  margin-left: 60px;
+  color: #ccc;
+}
+
+.textoF {
+  font-size: 25px;
+  margin-left: 60px;
+  color: #ccc;
+}
+
+.textoB {
+  font-size: 25px;
+  margin-left: 60px;
+  color: #ccc;
+}
+
+.draKLB {
+  margin-left: 60px;
+  color: #ccc;
+  text-shadow: 2px 1px 2px black;
+  font-size: 35px;
+}
+
+/* Pagina de nosotros */
+.button-container {
+  background-image: url(images/imagen1.webp);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  filter: brightness(0.5);
+}
+.estudio,
+.odontologico,
+.home-texto {
+  color: #fff;
+  font-family: "GT America Extended Regular";
+  text-align: center;
+  letter-spacing: 7px;
+}
+@media screen and (max-width: 1250px) {
+  .estudio,
+  .odontologico,
+  .home-texto {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .estudio,
+  .odontologico,
+  .home-texto {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .estudio,
+  .odontologico,
+  .home-texto {
+    font-size: 20px;
+  }
+}
+
+.estudio {
+  font-size: 80px;
+  position: absolute;
+  margin-left: 450px;
+  bottom: 500px;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .estudio {
+    font-size: 60px;
+    margin-left: 30%;
+    bottom: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .estudio {
+    font-size: 50px;
+    margin-bottom: 2%;
+    margin-left: 230px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .estudio {
+    font-size: 35px;
+    margin-left: 30%;
+    bottom: 40%;
+  }
+}
+
+.odontologico {
+  font-size: 80px;
+  position: absolute;
+  margin-left: 270px;
+  bottom: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .odontologico {
+    font-size: 60px;
+    margin-left: 16%;
+    bottom: 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .odontologico {
+    font-size: 50px;
+    margin-left: 15%;
+    bottom: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .odontologico {
+    font-size: 35px;
+    margin-left: 10%;
+    top: 110%;
+  }
+}
+
+.home-texto {
+  font-size: 13px;
+  position: absolute;
+  margin-left: 10%;
+  bottom: 30%;
+}
+@media screen and (max-width: 1024px) {
+  .home-texto {
+    font-size: 12px;
+    margin-left: 3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-texto {
+    font-size: 10px;
+    margin-right: 30%;
+    bottom: 30%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .home-texto {
+    font-size: 8px;
+    margin-left: 5%;
+    top: 95%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .titulo-inicio1,
+  .titulo-inicio2,
+  .titulo-inicio3,
+  .p-inicio1,
+  .p-inicio2,
+  .p-inicio3 {
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .titulo-inicio1,
+  .titulo-inicio2,
+  .titulo-inicio3,
+  .p-inicio1,
+  .p-inicio2,
+  .p-inicio3 {
+    margin: 3;
+  }
+}
+@media screen and (max-width: 480px) {
+  .titulo-inicio1,
+  .titulo-inicio2,
+  .titulo-inicio3,
+  .p-inicio1,
+  .p-inicio2,
+  .p-inicio3 {
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .titulo-inicio1 {
+    font-size: 32px;
+    margin-right: 3%;
+    bottom: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .titulo-inicio1 {
+    font-size: 35px;
+    margin-bottom: 2%;
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .titulo-inicio1 {
+    font-size: 20px;
+    margin-left: 5%;
+    bottom: 40%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .p-inicio1 {
+    font-size: 25px;
+    margin-left: 3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-inicio1 {
+    margin-right: 30%;
+    margin-left: 10%;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-inicio1 {
+    font-size: 20px;
+    margin-left: 30%;
+    margin-top: 120%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .titulo-inicio2 {
+    font-size: 32px;
+    margin-left: 1%;
+    bottom: 150%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .titulo-inicio2 {
+    font-size: 35px;
+    margin-right: 30%;
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .titulo-inicio2 {
+    font-size: 20px;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .p-inicio2 {
+    font-size: 25px;
+    margin-left: 3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-inicio2 {
+    font-size: 25px;
+    margin-right: 30%;
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-inicio2 {
+    font-size: 20px;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .titulo-inicio3 {
+    font-size: 32px;
+    margin-left: 1%;
+    bottom: 150%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .titulo-inicio3 {
+    font-size: 35px;
+    margin-right: 30%;
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .titulo-inicio3 {
+    font-size: 20px;
+    margin-left: 1%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .p-inicio3 {
+    font-size: 25px;
+    margin-left: 3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-inicio3 {
+    font-size: 25px;
+    margin-right: 30%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-inicio3 {
+    font-size: 20px;
+    margin-left: 30%;
+  }
+}
+
+/* Responsive de Servicios (TEXTO)*/
+.cirugia-texto,
+.protesis-texto,
+.endodoncia-texto,
+.ortodoncia-texto {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .cirugia-texto,
+  .protesis-texto,
+  .endodoncia-texto,
+  .ortodoncia-texto {
+    padding: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .cirugia-texto,
+  .protesis-texto,
+  .endodoncia-texto,
+  .ortodoncia-texto {
+    font-size: 0.8rem;
+  }
+  .protesis-texto,
+  .endodoncia-texto,
+  .ortodoncia-texto {
+    padding: 5px;
+  }
+}
+/* Responsive de Servicios (TEXTO)*/
+/* Responsive de Servicios*/
+.cirugia,
+.protesis,
+.endodoncia,
+.ortodoncia {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .cirugia,
+  .protesis,
+  .endodoncia,
+  .ortodoncia {
+    padding: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .cirugia,
+  .protesis,
+  .endodoncia,
+  .ortodoncia {
+    font-size: 1.5rem;
+  }
+  .protesis,
+  .endodoncia,
+  .ortodoncia {
+    padding: 5px;
+  }
+}
+/* Responsive de Servicios*/
+
+/*# sourceMappingURL=estilos.css.map */
